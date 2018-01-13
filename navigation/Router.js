@@ -1,6 +1,6 @@
 import { StackNavigator } from 'react-navigation'
 
-import Login from '../screens/Login'
+import Login from '@views/Login'
 
 export default StackNavigator({
   Login: {
