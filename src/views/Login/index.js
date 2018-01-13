@@ -1,17 +1,14 @@
 import React from 'react'
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
+import Input from '@components/FormInput'
 import styles from './styles'
 
 const Login = () => (
 	<View style={styles.container}>
 		<Text style={styles.testMe}>TestMe</Text>
 		<View style={styles.loginBox}>
-			<TextInput
-				placeholder="Email"
-			/>
-			<TextInput
-				placeholder="Password"
-			/>
+			<Input placeholder="Email" />
+			<Input placeholder="Password" />
 
 			<View style={styles.loginBtnContainer}>
 				<TouchableOpacity style={styles.loginBtn}>
