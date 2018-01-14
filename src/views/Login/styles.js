@@ -6,7 +6,7 @@ export default StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		justifyContent: 'center',
-		backgroundColor: 'white'
+		backgroundColor: 'white',
 	},
 	loginBox: {
 		backgroundColor: 'white',
@@ -14,7 +14,7 @@ export default StyleSheet.create({
 		height: 265,
 		width: '75%',
 		shadowColor: 'black',
-		shadowOffset: {height: 0, width: 0},
+		shadowOffset: { height: 0, width: 0 },
 		shadowRadius: 8,
 		shadowOpacity: 0.1,
 		alignItems: 'center',
@@ -24,7 +24,7 @@ export default StyleSheet.create({
 		color: PRIMARY,
 		fontSize: 30,
 		fontWeight: 'bold',
-		marginBottom: 40
+		marginBottom: 40,
 	},
 	loginBtnContainer: {
 		position: 'absolute',
@@ -38,5 +38,9 @@ export default StyleSheet.create({
 		backgroundColor: 'transparent',
 		alignItems: 'center',
 		paddingVertical: 10,
-	}
+	},
+	inputIcon: {
+		height: 20,
+		width: 20,
+	},
 })
