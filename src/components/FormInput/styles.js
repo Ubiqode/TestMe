@@ -17,5 +17,10 @@ export default StyleSheet.create({
 		paddingLeft: 5,
 		paddingBottom: 5,
 		paddingTop: 5,
+		fontFamily: 'Futura',
+	},
+	inputIcon: {
+		height: 20,
+		width: 20,
 	},
 })

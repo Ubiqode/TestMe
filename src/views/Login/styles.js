@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { PRIMARY } from '@theme/colors'
+import { PRIMARY, TINT, GRAY_DARKER } from '@theme/colors'
 
 export default StyleSheet.create({
 	container: {
@@ -18,7 +18,7 @@ export default StyleSheet.create({
 		shadowRadius: 8,
 		shadowOpacity: 0.1,
 		alignItems: 'center',
-		justifyContent: 'center',
+		paddingTop: 25,
 	},
 	testMe: {
 		color: PRIMARY,
@@ -39,8 +39,32 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		paddingVertical: 10,
 	},
-	inputIcon: {
-		height: 20,
-		width: 20,
+	form: {
+		paddingHorizontal: 25,
+		width: '100%',
+	},
+	formTitle: {
+		fontSize: 26,
+		color: TINT,
+		marginBottom: 30,
+		fontWeight: '700',
+		fontFamily: 'Futura',
+	},
+	loginBtnText: {
+		color: 'white',
+		fontSize: 20,
+		fontWeight: '500',
+		fontFamily: 'Futura',
+	},
+	forgot: {
+		fontWeight: '500',
+		fontFamily: 'Futura',
+		fontSize: 13,
+		color: GRAY_DARKER,
+	},
+	forgotBtn: {
+		right: 25,
+		bottom: -24,
+		position: 'absolute',
 	},
 })
