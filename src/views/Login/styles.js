@@ -7,11 +7,12 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'center',
 		backgroundColor: 'white',
+		width: '100%',
 	},
 	loginBox: {
 		backgroundColor: 'white',
 		borderRadius: 10,
-		height: 265,
+		height: 275,
 		width: '75%',
 		shadowColor: 'black',
 		shadowOffset: { height: 0, width: 0 },
@@ -20,11 +21,11 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		paddingTop: 25,
 	},
-	testMe: {
-		color: PRIMARY,
-		fontSize: 30,
-		fontWeight: 'bold',
-		marginBottom: 40,
+	testme: {
+		marginBottom: 50,
+		marginTop: -20,
+		height: 85,
+		width: 260,
 	},
 	loginBtnContainer: {
 		position: 'absolute',
@@ -46,7 +47,7 @@ export default StyleSheet.create({
 	formTitle: {
 		fontSize: 26,
 		color: TINT,
-		marginBottom: 30,
+		marginBottom: 25,
 		fontWeight: '700',
 		fontFamily: 'Futura',
 	},
@@ -64,7 +65,7 @@ export default StyleSheet.create({
 	},
 	forgotBtn: {
 		right: 25,
-		bottom: -24,
+		bottom: -10,
 		position: 'absolute',
 	},
 })
