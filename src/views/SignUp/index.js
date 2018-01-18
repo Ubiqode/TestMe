@@ -3,17 +3,22 @@ import { View, Text, TouchableOpacity, Image, KeyboardAvoidingView, TouchableWit
 import Input from '@components/FormInput'
 import emailIcon from '@assets/email-icon.png'
 import passwordIcon from '@assets/password-icon.png'
+import fullnameIcon from '@assets/fullname.png'
 import testme from '@assets/TestMe.png'
 import styles from './styles'
 
-const Login = (props) => (
+const SignUp = () => (
 	<KeyboardAvoidingView style={styles.container} behavior="padding">
 		<TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
 			<View style={styles.container}>
 				<Image source={testme} style={styles.testme} />
-				<View style={styles.loginBox}>
+				<View style={styles.signupBox}>
 					<View style={styles.form}>
-						<Text style={styles.formTitle}>LOGIN</Text>
+						<Text style={styles.formTitle}>SIGN UP</Text>
+						<Input
+							icon={fullnameIcon}
+							placeholder="Full Name"
+						/>
 						<Input
 							icon={emailIcon}
 							placeholder="Email"
@@ -22,16 +27,10 @@ const Login = (props) => (
 							icon={passwordIcon}
 							placeholder="Password"
 						/>
-						<TouchableOpacity style={styles.forgotBtn}>
-							<Text style={styles.forgot}>Forgot your password?</Text>
-						</TouchableOpacity>
 					</View>
-					<View style={styles.loginBtnContainer}>
-						<TouchableOpacity
-							style={styles.loginBtn}
-							onPress={() => props.navigation.navigate('SignUp')}
-						>
-							<Text style={styles.loginBtnText}>LOGIN</Text>
+					<View style={styles.signupBtnContainer}>
+						<TouchableOpacity style={styles.signupBtn}>
+							<Text style={styles.signupBtnText}>DONE</Text>
 						</TouchableOpacity>
 					</View>
 				</View>
@@ -40,4 +39,4 @@ const Login = (props) => (
 	</KeyboardAvoidingView>
 )
 
-export default Login
+export default SignUp

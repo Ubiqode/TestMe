@@ -9,10 +9,10 @@ export default StyleSheet.create({
 		backgroundColor: 'white',
 		width: '100%',
 	},
-	loginBox: {
+	signupBox: {
 		backgroundColor: 'white',
 		borderRadius: 10,
-		height: '38%',
+		height: '42%',
 		width: '75%',
 		shadowColor: 'black',
 		shadowOffset: { height: 0, width: 0 },
@@ -27,7 +27,7 @@ export default StyleSheet.create({
 		height: 85,
 		width: 260,
 	},
-	loginBtnContainer: {
+	signupBtnContainer: {
 		position: 'absolute',
 		bottom: 0,
 		borderBottomLeftRadius: 10,
@@ -35,7 +35,7 @@ export default StyleSheet.create({
 		width: '100%',
 		backgroundColor: PRIMARY,
 	},
-	loginBtn: {
+	signupBtn: {
 		backgroundColor: 'transparent',
 		alignItems: 'center',
 		paddingVertical: 10,
@@ -51,7 +51,7 @@ export default StyleSheet.create({
 		fontWeight: '700',
 		fontFamily: 'Futura',
 	},
-	loginBtnText: {
+	signupBtnText: {
 		color: 'white',
 		fontSize: 20,
 		fontWeight: '500',
