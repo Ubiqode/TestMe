@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Platform } from 'react-native'
 import { PRIMARY, TINT, GRAY_DARKER } from '@theme/colors'
 
 export default StyleSheet.create({
@@ -22,7 +22,7 @@ export default StyleSheet.create({
 		paddingTop: 25,
 	},
 	testme: {
-		marginBottom: 50,
+		marginBottom: 35,
 		marginTop: -20,
 		height: 85,
 		width: 260,
@@ -49,17 +49,17 @@ export default StyleSheet.create({
 		color: TINT,
 		marginBottom: 25,
 		fontWeight: '700',
-		fontFamily: 'Futura',
+		fontFamily: Platform.OS === 'ios' ? 'Futura' : 'Roboto',
 	},
 	signupBtnText: {
 		color: 'white',
 		fontSize: 20,
 		fontWeight: '500',
-		fontFamily: 'Futura',
+		fontFamily: Platform.OS === 'ios' ? 'Futura' : 'Roboto',
 	},
 	forgot: {
 		fontWeight: '500',
-		fontFamily: 'Futura',
+		fontFamily: Platform.OS === 'ios' ? 'Futura' : 'Roboto',
 		fontSize: 13,
 		color: GRAY_DARKER,
 	},

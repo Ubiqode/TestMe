@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Platform } from 'react-native'
 
 export default StyleSheet.create({
 	container: {
@@ -18,7 +18,7 @@ export default StyleSheet.create({
 		paddingLeft: 5,
 		paddingBottom: 5,
 		paddingTop: 5,
-		fontFamily: 'Futura',
+		fontFamily: Platform.OS === 'ios' ? 'Futura' : 'Roboto',
 	},
 	inputIcon: {
 		height: 20,

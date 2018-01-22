@@ -1,13 +1,19 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, Image, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native'
 import Input from '@components/FormInput'
+import PropTypes from 'prop-types'
 import emailIcon from '@assets/email-icon.png'
 import passwordIcon from '@assets/password-icon.png'
 import testme from '@assets/TestMe.png'
 import styles from './styles'
 
 const Login = (props) => (
-	<KeyboardAvoidingView style={styles.container} behavior="padding">
+	<KeyboardAvoidingView
+		style={styles.container}
+		behavior="position"
+		contentContainerStyle={{ width: '100%', height: '100%' }}
+		keyboardVerticalOffset={-150}
+	>
 		<TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
 			<View style={styles.container}>
 				<Image source={testme} style={styles.testme} />
@@ -39,5 +45,9 @@ const Login = (props) => (
 		</TouchableWithoutFeedback>
 	</KeyboardAvoidingView>
 )
+
+Login.propTypes = {
+	navigation: PropTypes.objectOf(PropTypes.any).isRequired,
+}
 
 export default Login

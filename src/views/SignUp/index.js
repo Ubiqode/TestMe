@@ -7,8 +7,13 @@ import fullnameIcon from '@assets/fullname.png'
 import testme from '@assets/TestMe.png'
 import styles from './styles'
 
-const SignUp = () => (
-	<KeyboardAvoidingView style={styles.container} behavior="padding">
+const SignUp = (props) => (
+	<KeyboardAvoidingView
+		style={styles.container}
+		behavior="position"
+		contentContainerStyle={{ width: '100%', height: '100%' }}
+		keyboardVerticalOffset={-155}
+	>
 		<TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
 			<View style={styles.container}>
 				<Image source={testme} style={styles.testme} />
@@ -29,7 +34,10 @@ const SignUp = () => (
 						/>
 					</View>
 					<View style={styles.signupBtnContainer}>
-						<TouchableOpacity style={styles.signupBtn}>
+						<TouchableOpacity
+							style={styles.signupBtn}
+							onPress={() => props.navigation.navigate('Login')}
+						>
 							<Text style={styles.signupBtnText}>DONE</Text>
 						</TouchableOpacity>
 					</View>
