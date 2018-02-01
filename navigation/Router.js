@@ -1,7 +1,6 @@
 import { StackNavigator } from 'react-navigation'
 
-import Login from '@views/Login'
-import SignUp from '@views/SignUp'
+import { Login, SignUp, Collections } from '@views'
 
 export default StackNavigator({
   Login: {
@@ -14,6 +13,12 @@ export default StackNavigator({
 		screen: SignUp,
 		navigationOptions: {
 			header: null,
+		},
+	},
+	Collections: {
+		screen: Collections,
+		navigationOptions: {
+			title: 'Collections',
 		},
 	},
 })
