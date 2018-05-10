@@ -1,10 +1,10 @@
 {
   "expo": {
     "name": "testme",
-    "description": "An empty new project",
+    "description": "An interactive flashcard game where you can pin words you need to work on for later",
     "slug": "testme",
     "privacy": "public",
-    "sdkVersion": "22.0.0",
+    "sdkVersion": "27.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
