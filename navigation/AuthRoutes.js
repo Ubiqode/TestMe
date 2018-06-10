@@ -8,7 +8,7 @@ export default createStackNavigator({
       header: null,
     },
 	},
-	SignUp: {
+	Signup: {
 		screen: SignUp,
 		navigationOptions: {
 			header: null,
