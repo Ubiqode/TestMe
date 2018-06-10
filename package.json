@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Ubiqode/TestMe#readme",
   "dependencies": {
+    "core-decorators": "^0.20.0",
     "expo": "^27.0.1",
     "mobx": "^5.0.0",
     "mobx-react": "^5.2.2",

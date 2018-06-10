@@ -9,16 +9,14 @@ class Input extends Component {
 		placeholder: PropTypes.string,
 		icon: PropTypes.number,
 		underlineColor: PropTypes.string,
+		value: PropTypes.string.isRequired,
+		onChangeText: PropTypes.func.isRequired,
 	}
 
 	static defaultProps = {
 		icon: null,
 		placeholder: 'Input',
 		underlineColor: GRAY,
-	}
-
-	state = {
-		input: '',
 	}
 
 	render() {
@@ -35,8 +33,8 @@ class Input extends Component {
 				</View>
 				<TextInput
 					placeholder={this.props.placeholder}
-					value={this.state.input}
-					onChangeText={(input) => this.setState({ input })}
+					value={this.props.value}
+					onChangeText={input => this.props.onChangeText(input)}
 					style={[styles.input, this.props.icon && iconPadding]}
 				/>
 				<View style={[styles.underline, { borderColor: this.props.underlineColor }]} />

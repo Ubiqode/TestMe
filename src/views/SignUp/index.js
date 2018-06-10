@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text, TouchableOpacity, Image, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native'
 import PropTypes from 'prop-types'
-import Input from '@components/FormInput'
+import Input from '@components/Input'
 import emailIcon from '@assets/email-icon.png'
 import passwordIcon from '@assets/password-icon.png'
 import fullnameIcon from '@assets/fullname.png'
