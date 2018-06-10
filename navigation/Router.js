@@ -21,4 +21,6 @@ export default StackNavigator({
 			title: 'Collections',
 		},
 	},
+}, {
+	initialRouteName: 'Login',
 })

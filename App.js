@@ -1,13 +1,18 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { observer } from 'mobx-react'
+import { AppStore } from '@stores'
 
-import Router from './navigation/Router'
-
+@observer
 export default class App extends React.Component {
+	constructor(props) {
+		super(props)
+		this.store = AppStore
+	}
+
   render() {
-    return (
-       <Router />
-    );
+		const TestMe = this.store.appRoutes()
+    return <TestMe />
   }
 }
 

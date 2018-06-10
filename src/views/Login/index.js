@@ -5,7 +5,7 @@ import emailIcon from '@assets/email-icon.png'
 import passwordIcon from '@assets/password-icon.png'
 import testme from '@assets/TestMe.png'
 import { observer } from 'mobx-react'
-import { LoginStore } from '@stores/'
+import { LoginStore } from '@stores'
 
 import styles from './styles'
 
@@ -30,7 +30,7 @@ class Login extends Component {
 						<Image source={testme} style={styles.testme} />
 						<View style={styles.loginBox}>
 							<View style={styles.form}>
-								<Text style={styles.formTitle}>{store.email}</Text>
+								<Text style={styles.formTitle}>LOGIN</Text>
 								<Input
 									icon={emailIcon}
 									placeholder="Email"
@@ -50,7 +50,7 @@ class Login extends Component {
 							<View style={styles.loginBtnContainer}>
 								<TouchableOpacity
 									style={styles.loginBtn}
-									onPress={() => this.props.navigation.navigate('SignUp')}
+									onPress={() => store.goToSignup()}
 								>
 									<Text style={styles.loginBtnText}>LOGIN</Text>
 								</TouchableOpacity>
