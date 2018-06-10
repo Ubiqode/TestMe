@@ -2,13 +2,11 @@ import { observable } from 'mobx'
 import { autobind } from 'core-decorators'
 
 @autobind
-class LoginStore {
+class SignupStore {
+	@observable firstname = ''
+	@observable lastname = ''
 	@observable email = ''
 	@observable password = ''
-
-	goToSignup() {
-		this.navigation.navigate('Signup')
-	}
 }
 
-export default LoginStore
+export default SignupStore

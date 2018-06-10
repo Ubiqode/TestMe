@@ -5,15 +5,22 @@ import Input from '@components/Input'
 import emailIcon from '@assets/email-icon.png'
 import passwordIcon from '@assets/password-icon.png'
 import fullnameIcon from '@assets/fullname.png'
+import { observer } from 'mobx-react'
+import { SignupStore } from '@stores'
+
 import testme from '@assets/TestMe.png'
 import styles from './styles'
 
+@observer
 class SignUp extends Component {
-	static propTypes = {
-		navigation: PropTypes.objectOf(PropTypes.any).isRequired,
+	constructor(props) {
+		super(props)
+		this.store = new SignupStore(props)
 	}
 
 	render() {
+		const store = this.store
+
 		return (
 			<KeyboardAvoidingView
 				style={styles.container}
@@ -29,15 +36,27 @@ class SignUp extends Component {
 								<Text style={styles.formTitle}>SIGN UP</Text>
 								<Input
 									icon={fullnameIcon}
-									placeholder="Full Name"
+									placeholder="Firt name"
+									value={store.firstname}
+									onChangeText={value => store.firstname = value}
+								/>
+								<Input
+									icon={fullnameIcon}
+									placeholder="Last name"
+									value={store.lasname}
+									onChangeText={value => store.lasname = value}
 								/>
 								<Input
 									icon={emailIcon}
 									placeholder="Email"
+									value={store.email}
+									onChangeText={value => store.email = value}
 								/>
 								<Input
 									icon={passwordIcon}
 									placeholder="Password"
+									value={store.password}
+									onChangeText={value => store.password = value}
 								/>
 							</View>
 							<View style={styles.signupBtnContainer}>
