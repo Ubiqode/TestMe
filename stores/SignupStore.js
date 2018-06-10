@@ -1,8 +1,7 @@
 import { observable } from 'mobx'
-import { autobind } from 'core-decorators'
+import Store from './Store'
 
-@autobind
-class SignupStore {
+class SignupStore extends Store {
 	@observable firstname = ''
 	@observable lastname = ''
 	@observable email = ''
