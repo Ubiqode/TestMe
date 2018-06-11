@@ -26,7 +26,8 @@
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
-    "react-navigation": "^2.0.1"
+    "react-navigation": "^2.0.1",
+    "rn-animated-tabs": "^1.0.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",

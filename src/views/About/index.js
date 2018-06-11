@@ -9,8 +9,10 @@ import {
 import { observer } from 'mobx-react'
 import { AboutStore } from '@stores'
 import React, { Component } from 'react'
-import { GithubButton, LinkedinButton, WebsiteButton } from '../icons/button'
-import AnimatedTabs from '../lib/animatedTabs'
+import githubImage from '@assets/github.png'
+import linkedinImage from '@assets/linkedin.png'
+import websiteImage from '@assets/website.png'
+import AnimatedTabs from 'rn-animated-tabs';
 
 import TEAM from './team'
 import styles from './styles'
@@ -37,19 +39,19 @@ export default class About extends Component {
 							activeOpacity={0.7}
 							onPress={() => this.store.gotoLink(developer.github)}
 						>
-							<GithubButton />
+							<Image source={githubImage} />
 						</TouchableOpacity>
 						<TouchableOpacity
 							activeOpacity={0.7}
 							onPress={() => this.store.gotoLink(developer.website)}
 						>
-							<WebsiteButton />
+							<Image source={websiteImage} />
 						</TouchableOpacity>
 						<TouchableOpacity
 							activeOpacity={0.7}
 							onPress={() => this.store.gotoLink(developer.linkedin)}
 						>
-							<LinkedinButton />
+							<Image source={linkedinImage} />
 						</TouchableOpacity>
 					</View>
 					<Text style={styles.contentDescription}>{developer.description}</Text>

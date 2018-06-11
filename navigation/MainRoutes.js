@@ -1,5 +1,5 @@
 import { createDrawerNavigator, createStackNavigator } from 'react-navigation'
-import { Collections } from '@views'
+import { Collections, About } from '@views'
 
 export default createDrawerNavigator({
 	Main: createStackNavigator({
@@ -7,6 +7,12 @@ export default createDrawerNavigator({
 			screen: Collections,
 			navigationOptions: {
 				title: 'Collections',
+			},
+		},
+		About: {
+			screen: About,
+			navigationOptions: {
+				title: 'About',
 			},
 		},
 	}),
